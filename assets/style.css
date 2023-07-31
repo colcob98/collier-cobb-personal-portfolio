@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+
+.banner {
+    background-color: lemonchiffon;
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+.links {
+    display: flex;
+  }
+  
+.links a {
+    color: blueviolet;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+.name {
+    font-size: 32px;
+  }
+
+h2 {
+    font-size: 24px;
+}
+
+.about-me-content,
+.work-content {
+    padding-left: 20px;
+    border-left: 2px solid black;
+}
+
+@media screen and (min-width: 501px) {
+    .about-me{
+        margin: 20px;
+    }
+    .work {
+        margin-left: 70px;
+    }
+    .about-me,
+    .work {
+        display:flex;
+        align-items:center;
+    }
+
+    h2 {
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+    .about-me-content,
+    .work-content {
+        flex: 1;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .about-me,
+    .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        margin-bottom: 5px;
+    }
+    .about-me-content,
+    .work-content {
+        border-left:none;
+        border-top: 2px solid black;
+        padding-top: 10px;
+    }
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .name {
+        margin-bottom: 20px;
+    }
+   
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
