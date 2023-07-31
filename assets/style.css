@@ -1,92 +1,192 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: sans-serif;
-  }
-  
+}
+
 
 .banner {
-    background-color: lemonchiffon;
-    color: blueviolet;
+    background-color: aquamarine;
+    color: coral;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-  }
-  
-.links {
+}
+
+.links,
+.contact-info {
     display: flex;
-  }
-  
+}
+
 .links a {
-    color: blueviolet;
+    color: coral;
     text-decoration: none;
     margin-right: 15px;
-  }
-  
+}
+
 .name {
     font-size: 32px;
-  }
+}
 
 h2 {
     font-size: 24px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.about-me,
+.work,
+.contact {
+    display: flex;
+    flex: 1;
+    align-items: start;
+}
+
+.about-me {
+    margin: 20px;
+}
+
+.work {
+    margin: 0px 20px 20px 29px;
+}
+
+.contact {
+    margin-bottom: 20px;
 }
 
 .about-me-content,
-.work-content {
+.work-content,
+.contact-content {
     padding-left: 20px;
     border-left: 2px solid black;
 }
 
-@media screen and (min-width: 501px) {
-    .about-me{
-        margin: 20px;
-    }
-    .work {
-        margin-left: 70px;
-    }
-    .about-me,
-    .work {
-        display:flex;
-        align-items:center;
+#main-work {
+    width: 100%;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.sub-work {
+    width: 100%;
+}
+
+.title-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    left: 0px;
+    bottom: 150px;
+    background-color: aquamarine;
+    opacity: 0.7;
+    padding: 5%;
+}
+
+.project-card:hover {
+    transition: filter 0.8s;
+    filter: sepia(15%);
+}
+
+.project-card:hover .title-card{
+    opacity: 1;
     }
 
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    box-shadow: none;
+    background-color: transparent;
+    margin-right: 15px;
+}
+.contact-info a:hover {
+   box-shadow: 0 5px 15px aquamarine;
+   background-color: aquamarine;
+   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 769px) {
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sub-work {
+        width: 100%;
+        aspect-ratio: 3 / 1;
+        margin: 5px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
     h2 {
-        margin-right: 10px;
-        margin-left: 40px;
+        margin-bottom: 5px;
+        position: relative;
+        right: 20px;
     }
-    .about-me-content,
-    .work-content {
-        flex: 1;
-}
-}
 
-@media screen and (max-width: 500px) {
-    .about-me,
-    .work {
+    .banner {
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    h2 {
-        margin-bottom: 5px;
-    }
-    .about-me-content,
-    .work-content {
-        border-left:none;
-        border-top: 2px solid black;
-        padding-top: 10px;
-    }
-    .banner {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
+
     .name {
         margin-bottom: 20px;
     }
-   
-    .links {
+
+    .links,
+    .contact-info {
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .about-me,
+    .work,
+    .contact {
+        margin: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-content,
+    .work-content,
+    .contact-content {
+        border-left: none;
+        border-top: 2px solid black;
+        padding-top: 10px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-gap: none;
+    }
+
+    #main-work,
+    .sub-work {
+        width: 100%;
+        aspect-ratio: 3 / 1;
+        margin: 5px;
     }
 }
