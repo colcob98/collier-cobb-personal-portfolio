@@ -8,7 +8,7 @@ ALL projects are subject to change and will be updated accordingly.
 
 ## Usage
 
-The portfolio can be accessed [here](https://colcob98.github.io/personal-portfolio/).
+The portfolio can be accessed [here](https://colcob98.github.io/collier-cobb-personal-portfolio/).
 
 A preview is below.
 
