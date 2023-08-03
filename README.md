@@ -1,4 +1,4 @@
-#Collier Cobb's Personal Portfolio Web Application
+# Collier Cobb's Personal Portfolio Web Application
 
 A work in progress, this web application is designed to display Collier Cobb's current and future projects with the aim of procuring a job in software development.
 
@@ -6,7 +6,7 @@ The application was developed using CSS features such as flexbox and CSS variabl
 
 ALL projects are subject to change and will be updated accordingly.
 
-##Usage
+## Usage
 
 The portfolio can be accessed [here](https://colcob98.github.io/personal-portfolio/).
 
@@ -14,7 +14,7 @@ A preview is below.
 
 ![Collier Cobb's Personal Portfolio Screenshot](./assets/images/_C__Users_colli_bootcamp_challenge-2_index.html%20(1).png)
 
-##Contributions
+## Contributions
 
 The reset.css file was adapted from UNC bootcamp class files.
 
