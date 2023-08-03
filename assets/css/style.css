@@ -1,3 +1,4 @@
+/*Creating variables for use throughout the code*/
 :root {
     --lightblue: #7FFFD4;
     --darkblue: #2e2eb483;
@@ -8,7 +9,7 @@ body {
     font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
 }
 
-
+/*Styling banner with name and nav bar, and using flexbox for alignment and responsive purposes*/
 .banner {
     background-color: var(--darkblue);
     color: var(--lightblue);
@@ -67,6 +68,8 @@ h2 {
     color: var(--darkblue);
 }
 
+/*Introducing a flex format so that elements may be mobile- and tablet- responsive
+and be aligned aesthetically*/
 .about-me,
 .work,
 .contact {
@@ -87,11 +90,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+/*Creating a division between section header and respective sections*/
 .about-me-content,
 .work-content,
 .contact-content {
     padding-left: 20px;
-    border-left: 2px solid #2e2eb483;
+    border-left: 2px solid var(--darkblue);
 }
 
 #main-work {
@@ -99,7 +103,7 @@ h2 {
     max-height: 400px;
     margin-bottom: 10px;
 }
-
+/*Creating grid layout so that projects will adapt to smaller screen sizes as needed*/
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,7 +114,7 @@ h2 {
     width: 100%;
     height: 300px;
 }
-
+/*Using relative positioning for title card placement consistency*/
 #title-card-main{
     display: inline-flex;
     flex-direction: column;
@@ -134,6 +138,7 @@ h2 {
     padding: 5%;
 }
 
+/*Adding page interactiveness for a more engaging user experience*/
 .project-card:hover {
     transition: filter 0.4s;
     filter: sepia(20%);
@@ -164,6 +169,8 @@ h2 {
    transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
+/*Adding a media query for tablet-sized viewports;
+changing grid orientation so that all projects are in a single column*/
 @media screen and (max-width: 769px) {
     .grid-layout {
         display: grid;
@@ -182,6 +189,9 @@ h2 {
     }
 }
 
+/*Adding a media query for mobile-sized viewports;
+reducing main project image size;
+Reorienting section headers to the top of their respective sections to adapt to narrowness of mobile viewports*/
 @media screen and (max-width: 600px) {
     h2 {
         margin-bottom: 5px;
