@@ -12,7 +12,7 @@ The portfolio can be accessed [here](https://colcob98.github.io/collier-cobb-per
 
 A preview is below.
 
-![Collier Cobb's Personal Portfolio Screenshot](./assets/images/_C__Users_colli_bootcamp_challenge-2_index.html%20(1).png)
+![Collier Cobb's Personal Portfolio Screenshot](./assets/images/_C__Users_colli_bootcamp_challenge-2_index.html%20(3).png)
 
 ## Contributions
 
